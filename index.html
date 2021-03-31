@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>KeyVal.org</title>
+    <meta name="description" content="A super simple key value database" />
+    <meta name="keywords" content="keyval, redis, key-value" />
+    <meta name="author" content="Kishore" />
+
+    <!-- Font Awesome if you need it
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+  -->
+    <link
+      href="https://unpkg.com/tailwindcss/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!--Replace with your tailwind.css once created-->
+    <link
+      href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css"
+      rel="stylesheet"
+    />
+    <!--Tailwind Custom Forms - use to standardise form fields - https://github.com/tailwindcss/custom-forms-->
+
+    <style>
+      @import url("https://rsms.me/inter/inter.css");
+      html {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+          "Noto Color Emoji";
+      }
+
+    </style>
+  </head>
+
+  <body class="leading-relaxed bg-white tracking-wide flex flex-col">
+    <!--Nav-->
+    <nav id="header" class="w-full z-30 top-0 text-white py-1 lg:py-6">
+      <div
+        class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-2 lg:py-6"
+      >
+        <div class="flex items-center">
+          <a class="text-white no-underline hover:no-underline font-bold text-2xl md:text-3xl lg:text-5xl" href="#" >
+              <span class="text-blue-600">Key</span><span class="text-pink-600">Val</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mx-auto ">
+      <div class="text-center px-3 lg:px-0">
+        <h1
+          class="my-4 text-2xl md:text-3xl lg:text-5xl font-black leading-tight"
+        >
+          Super Simple Key-Value DB
+        </h1>
+        <p
+          class="leading-normal text-gray-800 text-base md:text-xl lg:text-2xl mb-8"
+        >
+          You can set a key/value and get it. Thats it!
+        </p>
+
+        <!--button
+          class="mx-auto lg:mx-0 hover:underline text-gray-800 font-extrabold rounded my-2 md:my-6 py-4 px-8 shadow-lg w-48"
+        >
+          Sign Up
+        </button>
+        <a
+          href="#"
+          class="inline-block mx-auto lg:mx-0 hover:underline bg-transparent text-gray-600 font-extrabold my-2 md:my-6 py-2 lg:py-4 px-8"
+          >View Additional Action</a
+        -->
+      </div>
+
+    </div>
+   
+         
+
+    <section class="bg-white py-0">
+      <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+        <h2
+          class="w-full my-2 text-5xl font-black leading-tight text-center text-gray-800"
+        >
+          How To
+        </h2>
+
+        <div class="w-full p-4 flex flex-col flex-grow flex-shrink">
+            
+            <div class="w-full font-bold text-2xl text-black px-6 py-4 text-center">
+                API for setting a key/value 
+            </div>
+            
+          <div class="flex justify-center " >
+            <div class="flex w-full md:w-1/2 flex-wrap px-6 m-2 text-white bg-black  shadow rounded overflow-hidden">
+                
+              <div class="w-full text-center text-xl text-gray-200 px-6 mt-4 mb-4">
+                <span class="text-l">https://</span><span class="font-bold">api.keyval.org/set/</span><span class="font-bold text-blue-500">{KEY}</span>/<span class="font-bold text-red-500">{VALUE}</span>
+              </div>
+            </div>
+          </div>
+            
+          <div class="mx-auto text-sm text-gray-800 px-6 mt-5">
+              <p>If you want to auto-generate a key, you can set key as - </p>
+              <p class="text-center">ex:- https://api.keyval.org/<span class="font-bold text-pink-600">-</span>/{VALUE}</p>
+          </div>
+        
+        </div>
+
+          
+        <div class="w-full p-4 flex flex-col flex-grow flex-shrink">
+            
+            <div class="w-full font-bold text-2xl text-black px-6 py-4 text-center">
+                API to get a value
+            </div>
+            
+          <div class="flex justify-center" >
+            <div class="flex w-full md:w-1/2 flex-wrap px-6 m-2 text-white bg-black  shadow rounded overflow-hidden">
+                
+              <div class="w-full text-center text-xl text-gray-200 px-6 mt-4 mb-4">
+                <span class="text-l">https://</span><span class="font-bold">api.keyval.org/get/</span><span class="font-bold text-blue-500">{KEY}</span>
+              </div>
+            </div>
+          </div>
+                
+        </div>
+          
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="bg-white ">
+      <div class="container mx-auto px-2 py-2">
+        <div class="w-full flex flex-col md:flex-row ">
+
+          <div class="flex-1">
+            <!--p class="uppercase font-extrabold text-gray-500 md:mb-6">Links</p-->
+            <ul class="list-reset text-center">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a target="_blank" href="https://www.notion.so/KeyVal-755b6f077dc346ed81a34f373b4a8f6a"
+                  class="font-bold no-underline hover:underline text-gray-800 hover:text-orange-500"
+                  >FAQ</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <!--p class="uppercase font-extrabold text-gray-500 md:mb-6">Social</p-->
+            <ul class="list-reset text-center">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a class="font-bold no-underline hover:underline text-gray-800 hover:text-orange-500"
+                  target="_blank" href="https://twitter.com/prakis">Twitter</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
