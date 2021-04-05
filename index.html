@@ -47,7 +47,7 @@
 	
   </head>
 
-  <body class="leading-relaxed bg-white tracking-wide flex flex-col">
+  <body class="leading-relaxed bg-white tracking-wide flex flex-col h-screen">
     <!--Nav-->
     <nav id="header" class="w-full z-30 top-0 text-white py-1 lg:py-6">
       <div
@@ -61,6 +61,7 @@
       </div>
     </nav>
 
+    <div class="mb-auto">
     <div class="container mx-auto ">
       <div class="text-center px-3 lg:px-0">
         <h1
@@ -105,9 +106,9 @@
             </div>
             
           <div class="flex justify-center " >
-            <div class="flex w-full md:w-1/2 flex-wrap px-6 m-2 text-white bg-black  shadow rounded overflow-hidden">
+            <div class="flex w-full md:w-1/2 flex-wrap px-1 m-2 text-white bg-black  shadow rounded overflow-hidden">
                 
-              <div class="w-full text-center text-xl text-gray-200 px-6 mt-4 mb-4">
+              <div class="w-full text-center text-xl text-gray-200 mt-4 mb-4">
                 <span class="text-l">https://</span><span class="font-bold">api.keyval.org/set/</span><span class="font-bold text-blue-500">{KEY}</span>/<span class="font-bold text-red-500">{VALUE}</span>
               </div>
             </div>
@@ -128,9 +129,9 @@
             </div>
             
           <div class="flex justify-center" >
-            <div class="flex w-full md:w-1/2 flex-wrap px-6 m-2 text-white bg-black  shadow rounded overflow-hidden">
+            <div class="flex w-full md:w-1/2 flex-wrap px-1 m-2 text-white bg-black  shadow rounded overflow-hidden">
                 
-              <div class="w-full text-center text-xl text-gray-200 px-6 mt-4 mb-4">
+              <div class="w-full text-center text-xl text-gray-200 mt-4 mb-4">
                 <span class="text-l">https://</span><span class="font-bold">api.keyval.org/get/</span><span class="font-bold text-blue-500">{KEY}</span>
               </div>
             </div>
@@ -140,7 +141,7 @@
           
       </div>
     </section>
-
+</div>
     <!--Footer-->
     <footer class="bg-white ">
       <div class="container mx-auto px-2 py-2">
@@ -166,7 +167,19 @@
                 >
               </li>
             </ul>
-          </div>
+          </div>            
+          <div class="flex-1">
+            <!--p class="uppercase font-extrabold text-gray-500 md:mb-6">Social</p-->
+            <ul class="list-reset text-center">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  Powered by 
+                <a class="font-bold no-underline hover:underline text-gray-800 hover:text-orange-500"
+                  target="_blank" href="https://railway.app">Railway.app</a
+                >
+              </li>
+            </ul>
+          </div>            
+
         </div>
       </div>
     </footer>
